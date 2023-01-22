@@ -1,0 +1,3601 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://world/dev/tilemap.png" type="Texture" id=1]
+[ext_resource path="res://world/dev/tree.tscn" type="PackedScene" id=2]
+[ext_resource path="res://enemy/rabbit/rabbit.tscn" type="PackedScene" id=3]
+
+[node name="Sand" type="YSort"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Grass" type="TextureRect" parent="."]
+margin_left = -4136.0
+margin_top = -2587.0
+margin_right = 5086.0
+margin_bottom = 2681.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Rabbit" parent="." instance=ExtResource( 3 )]
+position = Vector2( 407, -10 )
+current_state = 0
+
+[node name="Trees" type="YSort" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Clump0" type="YSort" parent="Trees"]
+position = Vector2( -157, -584 )
+
+[node name="Tree1" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( -185, 720 )
+
+[node name="Tree2" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( -661, 456 )
+
+[node name="Tree3" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( -93, -49 )
+
+[node name="Tree4" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 950, 586 )
+
+[node name="Tree5" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 596, 166 )
+
+[node name="Tree6" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 1909, -523 )
+
+[node name="Tree7" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 1269, -11 )
+
+[node name="Tree8" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( -1067, -267 )
+
+[node name="Tree9" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( -1923, 229 )
+
+[node name="Tree10" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( -1515, 1165 )
+
+[node name="Tree11" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( -2403, 853 )
+
+[node name="Tree12" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( -2555, -451 )
+
+[node name="Tree13" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( -2699, 1533 )
+
+[node name="Tree14" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( -1419, 2101 )
+
+[node name="Tree15" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( -611, 1717 )
+
+[node name="Tree16" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 493, 1901 )
+
+[node name="Tree17" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 101, 1397 )
+
+[node name="Tree18" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 1229, 1221 )
+
+[node name="Tree19" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 2285, 1725 )
+
+[node name="Tree20" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 1909, 1069 )
+
+[node name="Tree21" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 2148, 350 )
+
+[node name="Tree22" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 3207, 1435 )
+
+[node name="Tree23" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 2775, 825 )
+
+[node name="Tree24" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 3182, -82 )
+
+[node name="Tree25" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 3657, -692 )
+
+[node name="Tree26" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( 326, -624 )
+
+[node name="Tree27" parent="Trees/Clump0" instance=ExtResource( 2 )]
+position = Vector2( -988, 936 )
+
+[node name="Clump1" type="YSort" parent="Trees"]
+position = Vector2( -3574, -80 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump1" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump1" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump2" type="YSort" parent="Trees"]
+position = Vector2( -3552, -502 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump2" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump2" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump3" type="YSort" parent="Trees"]
+position = Vector2( -3537, -905 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump3" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump3" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump4" type="YSort" parent="Trees"]
+position = Vector2( -3563, -1364 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump4" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump4" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump5" type="YSort" parent="Trees"]
+position = Vector2( -3521, -1716 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump5" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump5" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump6" type="YSort" parent="Trees"]
+position = Vector2( -3618, 322 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump6" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump6" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump7" type="YSort" parent="Trees"]
+position = Vector2( -3650, 754 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump7" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump7" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump8" type="YSort" parent="Trees"]
+position = Vector2( -3669, 1192 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump8" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump8" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump9" type="YSort" parent="Trees"]
+position = Vector2( -3603, 1570 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump9" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump9" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump10" type="YSort" parent="Trees"]
+position = Vector2( 4108, 11 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump10" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump10" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump11" type="YSort" parent="Trees"]
+position = Vector2( 4130, -411 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump11" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump11" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump12" type="YSort" parent="Trees"]
+position = Vector2( 4145, -814 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump12" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump12" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump13" type="YSort" parent="Trees"]
+position = Vector2( 4119, -1273 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump13" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump13" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump14" type="YSort" parent="Trees"]
+position = Vector2( 4161, -1625 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump14" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump14" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump15" type="YSort" parent="Trees"]
+position = Vector2( 4064, 413 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump15" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump15" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump16" type="YSort" parent="Trees"]
+position = Vector2( 4032, 845 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump16" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump16" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump17" type="YSort" parent="Trees"]
+position = Vector2( 4013, 1283 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump17" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump17" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump18" type="YSort" parent="Trees"]
+position = Vector2( 4079, 1661 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump18" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump18" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump19" type="YSort" parent="Trees"]
+position = Vector2( -2795, -1757 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump19" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump19" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump20" type="YSort" parent="Trees"]
+position = Vector2( -2063, -1780 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump20" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump20" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump21" type="YSort" parent="Trees"]
+position = Vector2( -1338, -1791 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump21" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump21" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump22" type="YSort" parent="Trees"]
+position = Vector2( -628, -1814 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump22" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump22" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump23" type="YSort" parent="Trees"]
+position = Vector2( 69, -1795 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump23" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump23" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump24" type="YSort" parent="Trees"]
+position = Vector2( 801, -1818 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump24" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump24" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump25" type="YSort" parent="Trees"]
+position = Vector2( 1526, -1829 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump25" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump25" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump26" type="YSort" parent="Trees"]
+position = Vector2( 2236, -1852 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump26" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump26" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump27" type="YSort" parent="Trees"]
+position = Vector2( 2952, -1852 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump27" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump27" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump28" type="YSort" parent="Trees"]
+position = Vector2( 3684, -1875 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump28" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump28" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump29" type="YSort" parent="Trees"]
+position = Vector2( 4409, -1886 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump29" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump29" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump30" type="YSort" parent="Trees"]
+position = Vector2( 5119, -1909 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump30" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump30" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump31" type="YSort" parent="Trees"]
+position = Vector2( -3689, 2058 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump31" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump31" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump32" type="YSort" parent="Trees"]
+position = Vector2( -2957, 2035 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump32" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump32" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump33" type="YSort" parent="Trees"]
+position = Vector2( -2232, 2024 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump33" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump33" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump34" type="YSort" parent="Trees"]
+position = Vector2( -1522, 2001 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump34" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump34" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump35" type="YSort" parent="Trees"]
+position = Vector2( -825, 2020 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump35" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump35" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump36" type="YSort" parent="Trees"]
+position = Vector2( -93, 1997 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump36" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump36" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump37" type="YSort" parent="Trees"]
+position = Vector2( 632, 1986 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump37" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump37" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump38" type="YSort" parent="Trees"]
+position = Vector2( 1342, 1963 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump38" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump38" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump39" type="YSort" parent="Trees"]
+position = Vector2( 2058, 1963 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump39" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump39" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump40" type="YSort" parent="Trees"]
+position = Vector2( 2790, 1940 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump40" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump40" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump41" type="YSort" parent="Trees"]
+position = Vector2( 3515, 1929 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump41" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump41" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
+
+[node name="Clump42" type="YSort" parent="Trees"]
+position = Vector2( 4225, 1906 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree" parent="Trees/Clump42" instance=ExtResource( 2 )]
+
+[node name="Tree2" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( 83, -29 )
+
+[node name="Tree3" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -84, -59 )
+
+[node name="Tree4" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -123, 39 )
+
+[node name="Tree5" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( 32, 86 )
+
+[node name="Tree6" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( 153, -125 )
+
+[node name="Tree7" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( 8, -146 )
+
+[node name="Tree8" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -164, -138 )
+
+[node name="Tree9" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -238, -44 )
+
+[node name="Tree10" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -266, 41 )
+
+[node name="Tree11" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( 200, 169 )
+
+[node name="Tree12" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -77, 139 )
+
+[node name="Tree13" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -217, 105 )
+
+[node name="Tree14" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -315, 177 )
+
+[node name="Tree15" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -343, -51 )
+
+[node name="Tree16" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -294, -177 )
+
+[node name="Tree17" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( 168, 38 )
+
+[node name="Tree18" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( 74, 212 )
+
+[node name="Tree19" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -128, 238 )
+
+[node name="Tree20" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -392, 87 )
+
+[node name="Tree21" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -69, -217 )
+
+[node name="Tree22" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( 216, 266 )
+
+[node name="Tree23" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( 269, 92 )
+
+[node name="Tree24" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( 243, -74 )
+
+[node name="Tree25" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -263, 260 )
+
+[node name="Tree26" parent="Trees/Clump42" instance=ExtResource( 2 )]
+position = Vector2( -399, 237 )
