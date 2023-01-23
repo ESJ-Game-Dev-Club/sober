@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://world/dev/tilemap.png" type="Texture" id=1]
 [ext_resource path="res://world/dev/tree.tscn" type="PackedScene" id=2]
 [ext_resource path="res://enemy/rabbit/rabbit.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 4446.75, 209 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 334.25, 1962.5 )
 
 [node name="Sand" type="YSort"]
 __meta__ = {
@@ -3599,3 +3605,21 @@ position = Vector2( -263, 260 )
 
 [node name="Tree26" parent="Trees/Clump42" instance=ExtResource( 2 )]
 position = Vector2( -399, 237 )
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls"]
+position = Vector2( 328, -1717 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls"]
+position = Vector2( 152, 1889 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Walls"]
+position = Vector2( -3586, -26 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Walls"]
+position = Vector2( 3950, 57 )
+shape = SubResource( 2 )

@@ -15,7 +15,17 @@
 script = ExtResource( 4 )
 
 [node name="RabbitTimer" type="Timer" parent="Hivemind"]
+wait_time = 0.1
+autostart = true
+
+[node name="SpawnRect" type="TextureRect" parent="Hivemind"]
+margin_left = -2387.0
+margin_top = -965.0
+margin_right = 2956.0
+margin_bottom = 1081.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="HUD" parent="CanvasLayer" instance=ExtResource( 3 )]
+
+[connection signal="timeout" from="Hivemind/RabbitTimer" to="Hivemind" method="_on_RabbitTimer_timeout"]

@@ -8,6 +8,28 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Enemy",
+"language": "GDScript",
+"path": "res://enemy/enemy.gd"
+}, {
+"base": "Node2D",
+"class": "Hivemind",
+"language": "GDScript",
+"path": "res://enemy/hivemind.gd"
+}, {
+"base": "Label",
+"class": "Instructions",
+"language": "GDScript",
+"path": "res://ui/instructions.gd"
+} ]
+_global_script_class_icons={
+"Enemy": "",
+"Hivemind": "",
+"Instructions": ""
+}
+
 [application]
 
 config/name="Sober"
@@ -16,7 +38,8 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Global="*res://global.gd"
+Global="*res://autoload/global.gd"
+Leveling="*res://autoload/leveling.tscn"
 
 [display]
 
@@ -63,12 +86,18 @@ attack={
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
  ]
 }
+grab={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
 
 [layer_names]
 
 2d_physics/layer_1="world"
 2d_physics/layer_2="player"
 2d_physics/layer_3="enemy"
+2d_physics/layer_4="holdable"
 
 [physics]
 

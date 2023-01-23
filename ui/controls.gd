@@ -3,6 +3,8 @@ extends Label
 
 var moved := false
 var attacked := false
+var picked_up := false
+var thrown := false
 
 
 func _input(event):
