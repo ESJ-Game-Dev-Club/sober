@@ -4,6 +4,7 @@ extends Enemy
 enum State {
 	STILL,
 	WANDER,
+	ATTACK,
 	DEAD,
 	AIRBORNE,
 }
@@ -12,7 +13,7 @@ export(State) var current_state: int = State.WANDER
 var speed := 400
 
 var jump_force := -400
-var hitbox_cutoff = -80 # if the SpriteOrigin is greater than this number, hits won't register
+var hitbox_cutoff = -50 # if the SpriteOrigin is greater than this number, hits won't register
 
 
 func damage(_attacker: Node2D, _damage: int, force: Vector2, vertical_force: float):
@@ -57,6 +58,8 @@ func _physics_process(delta):
 			still()
 		State.WANDER:
 			wander()
+		State.ATTACK:
+			attack()
 		State.DEAD:
 			dead()
 		State.AIRBORNE:
@@ -69,6 +72,17 @@ func still():
 	do_flip()
 
 func wander():
+	$AnimationPlayer.play("wander")
+	
+	velocity = move_and_slide(velocity)
+	do_flip()
+	if $SpriteOrigin.position.y >= 0.0 and $JumpTimer.is_stopped():
+		velocity = Vector2.ZERO
+		$JumpTimer.start()
+	if Leveling.level >= 10:
+		current_state = State.ATTACK
+
+func attack():
 	$AnimationPlayer.play("wander")
 	
 	velocity = move_and_slide(velocity)
@@ -99,20 +113,25 @@ func airborne():
 		for area in overlap:
 			if not area.owner == self: # ignore self
 				if area.owner.dead == false:
-					Global.freeze_frame(0.1, 0.6)
+					Global.screen_shake(0.3, 0.6)
 					Leveling.add_experience(12)
 					Global.instructions.bonus_success = true
-				area.owner.damage(self, 1, velocity, -200) # damage other
-				damage(self, 1, velocity * -2, -200)
+				area.owner.damage(self, 1, velocity * 0.5, -200) # damage other
+				damage(self, 1, -velocity * 1.57, -200)
 	
 	# hit the ground and die
 	if $SpriteOrigin.position.y >= 0.0:
-		damage(self, 1, Vector2.ZERO, -400)
+		if !dead:
+			Global.screen_shake(0.2, 0.6)
+		damage(self, 1, -velocity * 0.5, -400)
 
 func _on_JumpTimer_timeout():
 	if current_state == State.WANDER:
 		jump()
-		velocity = Vector2.RIGHT.rotated(2 * PI / randf()) * speed
+		velocity = Vector2.RIGHT.rotated(2 * PI * randf()) * speed
+	elif current_state == State.ATTACK:
+		jump()
+		velocity = position.direction_to(Global.player.position).rotated(PI * (randf() - 0.5)) * speed
 
 func jump():
 	vertical_velocity = jump_force

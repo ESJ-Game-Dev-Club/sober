@@ -16,11 +16,11 @@ var acceleration := 100
 var player_direction = Vector2.RIGHT
 
 var holding: Node2D
-var throw_force = 700
-var throw_height = 600
+var throw_force = 1400
+var throw_height = 100
 
 
-func _physics_process(_delta):
+func _physics_process(delta):
 	match current_state:
 		State.NORMAL:
 			normal()
@@ -29,7 +29,7 @@ func _physics_process(_delta):
 		State.GRAB:
 			grab()
 		State.HOLD:
-			hold()
+			hold(delta)
 		State.THROW:
 			throw()
 
@@ -64,7 +64,7 @@ func do_grab():
 		holding.held = true
 		current_state = State.HOLD
 
-func hold():
+func hold(delta):
 	$AnimationPlayer.play("holding")
 	move()
 	
@@ -73,12 +73,19 @@ func hold():
 	# where the sprite goes
 	holding.get_node("SpriteOrigin").position.y = $HoldOrigin/SpriteOrigin.position.y
 	
+#	var magnitude = (player_direction * throw_force + velocity).length() + throw_height
+#	var throw_distance = get_range(holding.gravity, magnitude, asin(throw_height / magnitude), delta)
+#	$Node/Target.position = (throw_distance - 100) * player_direction + $HoldOrigin.position + position
+	
 	if Input.is_action_just_pressed("attack"):
 		current_state = State.THROW
 	elif Input.is_action_just_pressed("grab"): # let go of enemy
 		holding.held = false
 		holding.vertical_velocity = 0.0
 		current_state = State.NORMAL
+
+#func get_range(gravity, force, angle, delta):
+#	return pow(force, 2) * sin(2 * angle) / gravity * delta
 
 func throw():
 	$AnimationPlayer.play("throw")
@@ -87,6 +94,7 @@ func throw():
 func do_throw():
 	Global.instructions.thrown = true # for the tutorial instructions
 	holding.throw(player_direction * throw_force + velocity, -throw_height)
+	holding.throw(player_direction * throw_force, -throw_height)
 	holding.held = false
 
 

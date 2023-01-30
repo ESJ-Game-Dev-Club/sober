@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://player/player.gd" type="Script" id=1]
 [ext_resource path="res://player/dev/player_sheet.png" type="Texture" id=2]
+[ext_resource path="res://player/camera.gd" type="Script" id=3]
 
 [sub_resource type="Animation" id=4]
 length = 0.001
@@ -184,6 +185,9 @@ anims/throw = SubResource( 9 )
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 smoothing_enabled = true
+script = ExtResource( 3 )
+max_roll = 100.0
+target = NodePath("..")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
@@ -216,3 +220,13 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
 position = Vector2( 0, -42 )
 shape = SubResource( 6 )
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Target" type="Polygon2D" parent="Node"]
+visible = false
+modulate = Color( 1, 0, 0, 1 )
+show_behind_parent = true
+position = Vector2( 49, 25 )
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( -16, -16, 16, -16, 16, 16, -16, 16 )

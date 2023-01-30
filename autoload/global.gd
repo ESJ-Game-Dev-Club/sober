@@ -21,3 +21,6 @@ func freeze_frame(time_scale: float, duration: float):
 	Engine.time_scale = time_scale
 	yield(get_tree().create_timer(time_scale * duration), "timeout")
 	Engine.time_scale = 1.0
+
+func screen_shake(amount: float, max_trauma: float):
+	player.get_node("Camera2D").add_trauma(amount, max_trauma)
