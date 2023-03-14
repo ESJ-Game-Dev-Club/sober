@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b160v700qdnd8"]
+
+[ext_resource type="PackedScene" uid="uid://cilvibnmvppx6" path="res://world/sand.tscn" id="1_sujme"]
+[ext_resource type="PackedScene" uid="uid://btf03p17yj1yv" path="res://player/player.tscn" id="2_mqjo2"]
+
+[node name="Main" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Sand" parent="." instance=ExtResource("1_sujme")]
+
+[node name="Player" parent="." instance=ExtResource("2_mqjo2")]
